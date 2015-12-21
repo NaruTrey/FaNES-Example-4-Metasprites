@@ -70,6 +70,7 @@ void main(void) {
 	for(i = 0; i < 2; ++i) {
 		spriteID = newMetasprite(catX[i], catY[i], spriteID, !i ? metaCat1 : metaCat2);
 	}
+	setPaletteColor(PALETTE_BACKGROUND_1 + 0, 0x0F);
 	onGraphics();
 	while(TRUE) {
 		i = _frameCounter & 1 ? 0x30 : 0x2A;
